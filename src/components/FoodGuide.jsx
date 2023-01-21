@@ -7,10 +7,10 @@ import Protein from "../images/protein.png";
 function FoodGuide() {
   return (
     <>
-      <div className="food-guide relative flex flex-col items-center">
+      <div className="food-guide relative flex flex-col items-center ">
         <img
           src={Bg}
-          className="absolute w-[100vw] h-full md:h-[90vh] object-cover left-0 -z-10"
+          className="absolute w-[100vw] h-full md:h-[100vh] object-cover left-0 -z-10"
           alt="background_image"
         />
         <div className="varieties text-center px-0 uppercase border-b-2 border-[#000000] w-[80px] pb-2 flex justify-center text-xl tracking-[8px] m-6 drop-shadow-2xl shadow-black">
