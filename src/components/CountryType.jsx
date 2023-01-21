@@ -1,4 +1,4 @@
-import CountryTypeCard from "./  CountryTypeCard";
+import CountryTypeCard from "./ CountryTypeCard";
 
 function CountryType() {
   return (
