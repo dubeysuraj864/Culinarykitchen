@@ -1,21 +1,14 @@
+import React from 'react';
+import Loader from "./components/Loader";
 
-import CountryType from './components/CountryType';
-import FoodCards from './components/FoodCards';
-import FoodGuide from './components/FoodGuide';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import TopChefs from './components/TopChefs';
-
+const Home = React.lazy(() => import('./Home.jsx'));
 
 function App() {
   return (
     <div className="App overflow-hidden">
-     <Header lazy/>
-     <FoodCards lazy/>
-     <CountryType lazy/>
-     <TopChefs lazy/>
-     <FoodGuide lazy/>
-     <Footer lazy/>
+      <React.Suspense fallback={<Loader />}>
+    <Home/>
+      </React.Suspense>
     </div>
   );
 }
