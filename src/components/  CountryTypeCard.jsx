@@ -1,8 +1,8 @@
 function CountryTypeCard(props) {
   return (
     <>
-      <div className="country-type-card w-[29vw] my-6 mx-2 ">
-        <div className="title text-md font-bold py-4" >{props.title}</div>
+      <div className="country-type-card mx-auto w-[90vw] lg:w-[29vw] my-6 lg:mx-2 flex flex-col rounded-lg border lg:bg-transparent p-10 items-start">
+        <div className="title text-md font-bold py-4 " >{props.title}</div>
         <div className="description text-xs ">{props.description}</div>
       </div>
     </>

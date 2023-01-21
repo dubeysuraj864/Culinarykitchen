@@ -6,13 +6,14 @@ import Bg from "../images/top-chef-bg.png";
 function TopChefs() {
   return (
     <>
-     <div className="top  flex justify-center my-2">
+     <div className="top flex justify-center">
      <div className="varieties text-center px-0 uppercase border-b-2 border-[#000000] w-[80px] pb-2 flex justify-center text-xl tracking-[8px] m-6 drop-shadow-2xl shadow-black">
           top&nbsp;chefs
         </div>
      </div>
-      <div className="top-chefs relative min-h-[60vh] flex items-center justify-center my-10 transition-all px-4">
-        <img src={Bg} className="absolute -z-10 h-" alt="bg" />
+    
+      <div className="top-chefs relative md:min-h-[60vh] flex flex-col md:flex-row items-center justify-center my-10 transition-all px-4">
+      <img src={Bg} className=" absolute w-[100vw] h-[100vh]  -z-10 md:h-fit object-cover" alt="bg" />
         <ChefCard
           image={Chef1}
           name="Eileen Johnson"

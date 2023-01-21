@@ -3,7 +3,7 @@ import CountryTypeCard from "./  CountryTypeCard";
 function CountryType() {
   return (
     <>
-      <div className="CountryType flex items-start justify-center">
+      <div className="CountryType flex flex-col lg:flex-row items-start justify-center">
         <CountryTypeCard
           title="Indian Cuisine"
           description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
