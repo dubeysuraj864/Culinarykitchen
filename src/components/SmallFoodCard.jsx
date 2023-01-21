@@ -12,7 +12,9 @@ function SmallFoodCard(props) {
         />
         <div className="content group bg-[#fff] hover:bg-[#000] text-black hover:text-white transition-all  opacity-[0.8] lg:p-2 px-2 lg:px-4 rounded-b-[20px]">
           <div className="title py-2 font-bold text-xs">{props.title}</div>
-          <div className="description py-1 lg:py-2 text-xs">{props.description}</div>
+          <div className="description py-1 lg:py-2 text-xs">
+            {props.description}
+          </div>
           <hr className="text-white my-1 lg:my-2 border-[1.2px]" />
           <div className="buttons py-2 flex justify-between text-xs">
             <button className=" py-1 lg:py-2 rounded-[15px] flex items-center">
